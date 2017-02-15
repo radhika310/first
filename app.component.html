@@ -1,0 +1,28 @@
+<h1>
+  {{title}} </h1>
+
+
+  First Name : <input [(ngModel)]="firstname">
+   <br><br>
+   Last Name : <input [(ngModel)]="lastname"><br>
+   <br>
+  <h2><b>{{firstname}} {{lastname}}</b> please enter any 2 nos</h2>
+   Number 1:<input [(ngModel)]=num1 type="number"><br>
+  <br>
+Number 2:<input [(ngModel)]=num2 type="number">
+ <br><br>
+  {{num1}}+{{num2}}
+ 
+ <button (click)="onClick($event)" id="Add"> Add </button>=
+ <input type="text" value="{{sum}}"><br><br>
+{{num1}}-{{num2}}
+ <button (click)="onClick($event)" id="subtract"> Subtract </button>=
+<input type="text" value="{{sub}}"><br><br>
+{{num1}}*{{num2}}
+<button (click)="onClick($event)" id="multiply"> multiply </button>=
+<input type="text" value="{{mul}}"><br><br>
+{{num1}}/{{num2}}
+<button (click)="onClick($event)" id="division"> division </button>=
+<input type="text" value="{{div}}"><br><br>
+
+
